@@ -1,9 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jul 10 14:50:54 2020
-
-@author: nxf33342
-"""
+#remember to set up your driver on local machine before run selenium
+# OS: Windows 10
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -22,9 +18,9 @@ import pyexcel
 import re
 
 # =============================================================================
-# #get foreclosure data
+# #get15-year foreclosure data, only need to run this part one time
 # opts = Options()
-# driver = webdriver.Chrome(executable_path='C:\\Users\\nxf33342\\AppData\\Local\\Continuum\\anaconda3\\Scripts\\chromedriver.exe',chrome_options=opts)
+# driver = webdriver.Chrome(executable_path='C:\\Users\\{your user name}\\AppData\\Local\\Continuum\\anaconda3\\Scripts\\chromedriver.exe',chrome_options=opts)
 # driver.get('https://pip.moi.gov.tw/V3/A/SCRA0601.aspx')
 # xpathlst = range(2, 24)
 # raw = glob.glob(r'C:/*/*/Downloads/[*.xls')
@@ -89,7 +85,6 @@ grouped = grouped.reindex(list(range(113,len(grouped)))+list(range(0,113)))
 # plt.plot( '年/月', '總拍定價格', data=grouped, marker='', color='green', linewidth=2)
 # plt.plot( '年/月', '活存機動利率', data=grouped, marker='', color='olive', linewidth=2, linestyle='dashed')
 # plt.legend()
-# 
 # =============================================================================
 #double y
 
