@@ -56,10 +56,10 @@ main[['年','月','日']] = main['拍定日期'].str.extract('(.*)(.{2})(.{2})')
 main['年/月']=main['年'] + '/' + main['月']
 
 #modify bank rate file with obselet excel format
-sheet0 = pyexcel.get_sheet(file_name="C:\\Users\\nxf33342\\Desktop\\foreclosure\\bankrate.xls", name_columns_by_row=0)
+sheet0 = pyexcel.get_sheet(file_name="C:\\Users\\{your user name}\\Desktop\\foreclosure\\bankrate.xls", name_columns_by_row=0)
 xlsarray = sheet0.to_array()
 sheet1 = pyexcel.Sheet(xlsarray)
-sheet1.save_as("C:\\Users\\nxf33342\\Desktop\\foreclosure\\updatedbankrate.xlsx")
+sheet1.save_as("C:\\Users\\{your user name}\\Desktop\\foreclosure\\updatedbankrate.xlsx")
 def filter():
     raw = pd.read_excel('updatedbankrate.xlsx', encoding = 'utf-8')
     rate = pd.DataFrame(raw[raw.columns[0]])
