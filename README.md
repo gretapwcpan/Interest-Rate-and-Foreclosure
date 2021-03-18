@@ -1,5 +1,5 @@
 # Project Description
-This small program is to directly fetches the data from the Taiwanese government, including Taiwanese Central Bank and Ministry of the Interior,
+This small program is to directly fetch the data from the Taiwanese government, including Taiwanese Central Bank and Ministry of the Interior,
 to present the interplay between interest rate, loan burden ratio and foreclosure movement for over 15 years.
 
 # Main library
